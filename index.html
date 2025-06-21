@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIS - Beranda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #e0f7fa;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #4481eb 0%, #b2ebf2 100%);
+            color: #fff;
+            padding: 40px 0 24px 0;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 18px;
+        }
+        nav a {
+            color: #0277bd;
+            background: #fff;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 24px;
+            margin: 0 8px;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 2px 8px rgba(2,119,189,0.06);
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #4fc3f7;
+            color: #fff;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 48px 16px 32px 16px;
+            background: #fff;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 4px 24px rgba(2,119,189,0.07);
+            max-width: 1100px;
+            margin: 32px auto 0 auto;
+        }
+        .hero-text {
+            flex: 1 1 320px;
+            min-width: 260px;
+        }
+        .hero-text h2 {
+            color: #0288d1;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        .hero-text p {
+            font-size: 1.15em;
+            margin-bottom: 0;
+        }
+        .hero-img {
+            flex: 1 1 260px;
+            min-width: 220px;
+            text-align: center;
+        }
+        .hero-img img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(2,119,189,0.10);
+            background: #e0f7fa;
+        }
+        .features {
+            max-width: 1000px;
+            margin: 48px auto 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(2,119,189,0.07);
+            padding: 28px 24px;
+            flex: 1 1 260px;
+            min-width: 220px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(2,119,189,0.13);
+        }
+        .feature-card h3 {
+            color: #0288d1;
+            margin-top: 0;
+        }
+        .feature-card p {
+            font-size: 1em;
+        }
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 1em;
+            color: #0288d1;
+            padding: 20px 0 16px 0;
+            background: #e0f7fa;
+            border-top: 1px solid #b2ebf2;
+        }
+        /* Responsive Styles */
+        @media (max-width: 1100px) {
+            .hero {
+                max-width: 98vw;
+            }
+            .features {
+                max-width: 98vw;
+            }
+        }
+        @media (max-width: 900px) {
+            .hero {
+                gap: 24px;
+                padding: 32px 8px 24px 8px;
+            }
+            .features {
+                gap: 20px;
+            }
+        }
+        @media (max-width: 800px) {
+            .hero {
+                flex-direction: column;
+                align-items: stretch;
+                border-radius: 0 0 24px 24px;
+                padding: 24px 4vw 16px 4vw;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.4em;
+            }
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.95em;
+                margin: 0 3px;
+            }
+            .hero-text h2 {
+                font-size: 1.2em;
+            }
+            .hero-img img {
+                max-width: 90vw;
+            }
+            .feature-card {
+                padding: 18px 10px;
+                min-width: 0;
+                max-width: 98vw;
+            }
+            .features {
+                padding: 0 2vw;
+            }
+        }
+        @media (max-width: 400px) {
+            .hero, .features {
+                padding: 0 1vw;
+            }
+            .feature-card {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Osis Smk-Sma Teladan Tanah Jawa</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="index.php">Informasi OSIS</a>
+            <a href="#">Kegiatan</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Selamat Datang di Website OSIS</h2>
+            <p>
+                OSIS (Organisasi Siswa Intra Sekolah) adalah wadah pengembangan diri, kreativitas, dan kepemimpinan siswa di SMA. 
+                Temukan informasi terbaru, kegiatan, dan prestasi OSIS di sini!
+            </p>
+        </div>
+        <div class="hero-img">
+            <img src="images/osis1.jpg" alt="OSIS SMA Contoh">
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Profil OSIS</h3>
+            <p>Mengenal lebih dekat struktur, visi, dan misi OSIS SMA Contoh.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Kegiatan</h3>
+            <p>Ikuti berbagai kegiatan menarik dan bermanfaat yang diadakan OSIS setiap semester.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Prestasi</h3>
+            <p>Daftar prestasi OSIS dan siswa yang membanggakan sekolah di tingkat lokal maupun nasional.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; OSIS SMK-SMA SWASTA TELADAN TANAH JAWA
+    </footer>
+</body>
+</html>
